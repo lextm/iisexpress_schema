@@ -40,6 +40,10 @@
                 <attribute name="type" type="string" />
                 <attribute name="warningLevel" type="int" />
                 <attribute name="compilerOptions" type="string" />
+                <collection addElement="providerOption" >
+                    <attribute name="name" type="string"  isCombinedKey="true" />
+                    <attribute name="value" type="string" isCombinedKey="true" />
+                </collection>
             </collection>
         </element>
     </sectionSchema>
