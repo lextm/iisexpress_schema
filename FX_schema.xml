@@ -66,7 +66,7 @@
             <attribute name="filemappingsize" type="int" defaultValue="524288" />
         </element>
         <element name="sharedListeners">
-            <collection addElement="add" allowUnrecognizedAttributes="true">
+            <collection addElement="add" allowDuplicates="true" allowUnrecognizedAttributes="true">
                 <attribute name="name" type="string" required="true" isUniqueKey="true" />
                 <attribute name="traceOutputOptions" type="flags" defaultValue="None">
                     <flag name="None" value="0" />
@@ -116,7 +116,7 @@
         <element name="switches">
             <collection addElement="add" removeElement="remove" clearElement="clear" allowUnrecognizedAttributes="true">
                 <attribute name="name" type="string" required="true" isUniqueKey="true" defaultValue="" />
-                <attribute name="type" type="string" required="true" />
+                <attribute name="value" type="string" required="true" />
             </collection>
         </element>
         <element name="trace">
